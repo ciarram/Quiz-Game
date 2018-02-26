@@ -23,5 +23,16 @@ const questionsAnswers = [
 $('#first-answer').hide();
 $('#second-answer').hide();
 $('#third-answer').hide();
+$('#next').hide();
+console.log("answers are hidden for now")
+
+$('#start').on('click', function(){
+    $('#start').hide();
+    console.log("Start is hidden")
+    $('#first-answer').show();
+    $('#second-answer').show();
+    $('#third-answer').show();
+    console.log("First Answers: " + questionsAnswers[0].answers);
+});
 
 });

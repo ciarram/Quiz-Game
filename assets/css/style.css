@@ -1,5 +1,12 @@
 h1{
     text-align: center;
+    margin-top: 3%;
+}
+
+#start{
+    margin-left: 47%;
+    margin-top:  10%;
+    padding: 10px;
 }
 
 .question{

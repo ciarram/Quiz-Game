@@ -1,3 +1,5 @@
+$(document).ready(function(){
+
 const questionsAnswers = [
     {
         question: "When was the Magna Carta written?",
@@ -18,3 +20,8 @@ const questionsAnswers = [
     }
 ];
 
+$('#first-answer').hide();
+$('#second-answer').hide();
+$('#third-answer').hide();
+
+});

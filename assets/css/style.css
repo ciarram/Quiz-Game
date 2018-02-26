@@ -9,9 +9,13 @@ h1{
     padding: 10px;
 }
 
-.question{
+.questions{
     text-align: center;
     padding: 10px;
+}
+
+#question{
+    text-align: center;
 }
 
 .answers{

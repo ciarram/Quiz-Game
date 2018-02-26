@@ -19,7 +19,7 @@ const questionsAnswers = [
         correct: "Elizabeth I"
     }
 ];
-
+$('.questions').hide();
 $('#first-answer').hide();
 $('#second-answer').hide();
 $('#third-answer').hide();
@@ -29,10 +29,20 @@ console.log("answers are hidden for now")
 $('#start').on('click', function(){
     $('#start').hide();
     console.log("Start is hidden")
+    $('.questions').show();
     $('#first-answer').show();
     $('#second-answer').show();
     $('#third-answer').show();
-    console.log("First Answers: " + questionsAnswers[0].answers);
+    firstQuestion();
 });
+
+const firstQuestion = () => {
+    $('#question').append(questionsAnswers[0].question);
+    $('#first-answer').append(questionsAnswers[0].answers[0]);
+    $('#second-answer').append(questionsAnswers[0].answers[1]);
+    $('#third-answer').append(questionsAnswers[0].answers[2]);
+    console.log("Function " + questionsAnswers[0].question);
+}
+
 
 });
